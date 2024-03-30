@@ -18,6 +18,7 @@
                         <th>Tahun Terbit</th>
                         <th>Stok Buku</th>
                         <th colspan="2" style="text-align: center;">Aksi</th>
+                       
                     </tr>
                     <?php
 
@@ -32,7 +33,7 @@
                         echo "<td>".$data['id_penulis']."</td>";
                         echo "<td>".$data['tahun_terbit']."</td>";
                         echo "<td>".$data['stok']."</td>";
-                        echo "<td><a href='index.php' class='btn btn-primary btn-icon-split'>
+                        echo "<td><a href='index.php?page=updatebuku&id_buku=".$data['id_buku']."' class='btn btn-primary btn-icon-split'>
                                 <span class='icon text-white-50'>
                                     <i class='fas fa-flag'></i>
                                 </span>

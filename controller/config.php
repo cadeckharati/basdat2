@@ -34,6 +34,14 @@ switch ($page) {
   case 'ProsesHapusBuku':
     include "controller/delete-buku.php";
     break;
+  
+  case 'ProsesHapusDenda':
+    include "controller/delete-denda.php";
+
+    //controller update
+  case 'ProsesUpdateBuku':
+    include "controller/update-buku.php";
+    break;
 
     //config create
   case 'createbuku':
@@ -85,6 +93,31 @@ switch ($page) {
     include "views/view_penulis.php";
     break;
 
+    //config update
+  case 'updatebuku':
+    include "views/update_buku.php";
+    break;
+  
+  case 'updatedenda':
+    include "views/update_denda.php";
+    break;
+
+  case 'updatekategori':
+    include "views/update_kategori.php";
+    break;
+
+  case 'updatemember':
+    include "views/update_member.php";
+    break;
+
+  case 'updatepeminjaman':
+    include "views/update_peminjaman.php";
+    break;
+
+  case 'updatepenulis':
+    include "views/update_penulis.php";
+    break;
+    
   default: // Ini untuk set default jika isi dari $page tidak ada pada 3 kondisi diatas
     include "views/home.php";
 }

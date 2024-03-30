@@ -10,6 +10,10 @@ $sql = $pdo->prepare("INSERT INTO tb_denda(id_peminjaman, total_denda, tanggal_b
 $sql->bindParam(':id_peminjaman', $id_peminjaman);
 $sql->bindParam(':total_denda', $total_denda);
 $sql->bindParam(':tanggal_bayar', $tanggal_bayar);
-$sql->execute();
-
-?> 
+$execute = $sql->execute();
+if($execute){
+    echo "Data berhasil ditambahkan!";
+}else{
+    echo "Data Gagal ditambahkan. <a href='index.php'>Kembali</a>";
+}
+?>

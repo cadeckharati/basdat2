@@ -3,30 +3,26 @@
   // Load file koneksi.php
   include "model/koneksi.php";
   // Ambil data ID yang dikirim oleh index.php melalui URL
-  $id_buku = $_GET['id_buku'];
+  $id_denda = $_GET['id_denda'];
   // Query untuk menampilkan data siswa berdasarkan ID yang dikirim
-  $sql = $pdo->prepare("SELECT * FROM tb_buku WHERE id_buku=:id_buku");
-  $sql->bindParam(':id_buku', $id_buku);
+  $sql = $pdo->prepare("SELECT * FROM tb_denda WHERE id_denda=:id_denda");
+  $sql->bindParam(':id_denda', $id_denda);
   $sql->execute();
   $data = $sql->fetch();
   ?>
-  <form method="post" action="index.php?page=ProsesUpdateBuku&id_buku=<?php echo $id_buku; ?>">
+  <form method="post" action="index.php?page=ubah&id_denda=<?php echo $id_denda; ?>">
     <table cellpadding="8">
       <tr>
-        <td>Judul Buku</td>
-        <td><input type="text" name="judul_buku" value="<?php echo $data['judul_buku']; ?>"></td>
+        <td>Kode Pinjam</td>
+        <td><input type="text" name="id_peminjaman" value="<?php echo $data['id_peminjaman']; ?>"></td>
       </tr>
       <tr>
-        <td>ID Penulis</td>
-        <td><input type="text" name="id_penulis" value="<?php echo $data['id_penulis']; ?>"></td>
+        <td>Total Denda</td>
+        <td><input type="text" name="total_denda" value="<?php echo $data['total_denda']; ?>"></td>
       </tr>
       <tr>
-        <td>Tahun Terbit</td>
-        <td><input type="text" name="tahun_terbit" value="<?php echo $data['tahun_terbit']; ?>"></td>
-      </tr>
-      <tr>
-        <td>Stok Buku</td>
-        <td><input type="text" name="stok" value="<?php echo $data['stok']; ?>"></td>
+        <td>Tanggal Bayar</td>
+        <td><input type="date" name="tanggal_bayar" value="<?php echo $data['tanggal_bayar']; ?>"></td>
       </tr>
     </table>
     <hr>
@@ -35,7 +31,8 @@
         <span class='icon text-white-50'>
             <i class='fas fa-check'></i>
         
-        </span>
+    
+          </span>
         <span class='text'>Update</span>
     </button>
     <a href='index.php' class='btn btn-danger btn-icon-split'>
@@ -44,5 +41,4 @@
             </span>
             <span class='text'>Batal</span>
         </a>
-    
   </form>

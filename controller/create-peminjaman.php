@@ -12,6 +12,10 @@ $sql->bindParam(':id_member', $id_member);
 $sql->bindParam(':id_buku', $id_buku);
 $sql->bindParam(':tanggal_pinjam', $tanggal_pinjam);
 $sql->bindParam(':tanggal_kembali', $tanggal_kembali);
-$sql->execute();
-
+$execute = $sql->execute();
+if($execute){
+    echo "Data berhasil ditambahkan!";
+}else{
+    echo "Data Gagal ditambahkan. <a href='index.php'>Kembali</a>";
+}
 ?>

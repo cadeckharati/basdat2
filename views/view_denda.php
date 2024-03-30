@@ -30,7 +30,7 @@
                         echo "<td>".$data['id_peminjaman']."</td>";
                         echo "<td>".$data['total_denda']."</td>";
                         echo "<td>".$data['tanggal_bayar']."</td>";
-                        echo "<td><a href='index.php' class='btn btn-primary btn-icon-split'>
+                        echo "<td><a href='index.php?page=updatedenda&id_denda=".$data['id_denda']."' class='btn btn-primary btn-icon-split'>
                                 <span class='icon text-white-50'>
                                     <i class='fas fa-flag'></i>
                                 </span>
