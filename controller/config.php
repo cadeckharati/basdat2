@@ -38,9 +38,45 @@ switch ($page) {
   case 'ProsesHapusDenda':
     include "controller/delete-denda.php";
 
+  case 'ProsesHapusKategori':
+    include "controller/delete-kategori.php";
+    break;
+    
+  case 'ProsesHapusPenulis':
+    include "controller/delete-penulis.php";
+    break;
+
+  case 'ProsesHapusMember':
+    include "controller/delete-member.php";
+    break;
+
+  case 'ProsesHapusPeminjaman':
+    include "controller/delete-peminjaman.php";
+    break;
+
     //controller update
   case 'ProsesUpdateBuku':
     include "controller/update-buku.php";
+    break;
+
+  case 'ProsesUpdateDenda':
+    include "controller/update-denda.php";
+    break;
+    
+  case 'ProsesUpdatePenulis':
+    include "controller/update-penulis.php";
+    break;
+    
+  case 'ProsesUpdateMember':
+    include "controller/update-member.php";
+    break;
+    
+  case 'ProsesUpdatePeminjaman':
+    include "controller/update-peminjaman.php";
+    break;
+    
+  case 'ProsesUpdateKategori':
+    include "controller/update-kategori.php";
     break;
 
     //config create

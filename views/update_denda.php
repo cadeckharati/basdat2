@@ -10,7 +10,7 @@
   $sql->execute();
   $data = $sql->fetch();
   ?>
-  <form method="post" action="index.php?page=ubah&id_denda=<?php echo $id_denda; ?>">
+  <form method="post" action="index.php?page=ProsesUpdateDenda&id_denda=<?php echo $id_denda; ?>">
     <table cellpadding="8">
       <tr>
         <td>Kode Pinjam</td>

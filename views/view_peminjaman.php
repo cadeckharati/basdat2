@@ -32,13 +32,13 @@
                         echo "<td>".$data['id_buku']."</td>";
                         echo "<td>".$data['tanggal_pinjam']."</td>";
                         echo "<td>".$data['tanggal_kembali']."</td>";
-                        echo "<td><a href='index.php' class='btn btn-primary btn-icon-split'>
+                        echo "<td><a href='index.php?page=updatepeminjaman&id_peminjaman=".$data['id_peminjaman']."' class='btn btn-primary btn-icon-split'>
                                 <span class='icon text-white-50'>
                                     <i class='fas fa-flag'></i>
                                 </span>
                                 <span class='text'>Edit</span>
                                 </a></td>";
-                        echo "<td><a href='index.php' class='btn btn-danger btn-icon-split'>
+                        echo "<td><a href='index.php?page=ProsesHapusPeminjaman&id_peminjaman=".$data['id_peminjaman']."' class='btn btn-danger btn-icon-split'>
                                         <span class='icon text-white-50'>
                                             <i class='fas fa-trash'></i>
                                         </span>

@@ -26,13 +26,13 @@
                         echo "<tr>";
                         echo "<td>".$data['id_penulis']."</td>";
                         echo "<td>".$data['nama_penulis']."</td>";
-                        echo "<td><a href='index.php' class='btn btn-primary btn-icon-split'>
+                        echo "<td><a href='index.php?page=updatepenulis&id_penulis=".$data['id_penulis']."' class='btn btn-primary btn-icon-split'>
                                 <span class='icon text-white-50'>
                                     <i class='fas fa-flag'></i>
                                 </span>
                                 <span class='text'>Edit</span>
                                 </a></td>";
-                        echo "<td><a href='index.php' class='btn btn-danger btn-icon-split'>
+                        echo "<td><a href='index.php?page=ProsesHapusPenulis&id_penulis=".$data['id_penulis']."' class='btn btn-danger btn-icon-split'>
                                         <span class='icon text-white-50'>
                                             <i class='fas fa-trash'></i>
                                         </span>

@@ -3,18 +3,18 @@
   // Load file koneksi.php
   include "model/koneksi.php";
   // Ambil data ID yang dikirim oleh index.php melalui URL
-  $id_penulis = $_GET['id_penulis$id_penulis'];
+  $id_penulis = $_GET['id_penulis'];
   // Query untuk menampilkan data siswa berdasarkan ID yang dikirim
   $sql = $pdo->prepare("SELECT * FROM tb_penulis WHERE id_penulis=:id_penulis");
-  $sql->bindParam(':id_penulis$id_penulis', $id_penulis);
+  $sql->bindParam(':id_penulis', $id_penulis);
   $sql->execute();
   $data = $sql->fetch();
   ?>
-  <form method="post" action="index.php?page=ubah&id_penulis$id_penulis=<?php echo $id_penulis; ?>">
+  <form method="post" action="index.php?page=ProsesUpdatePenulis&id_penulis=<?php echo $id_penulis; ?>">
     <table cellpadding="8">
       <tr>
         <td>Nama Penulis</td>
-        <td><input type="text" name="nama_penulis" value="<?php echo $data['id_penulis']; ?>"></td>
+        <td><input type="text" name="nama_penulis" value="<?php echo $data['nama_penulis']; ?>"></td>
       </tr>
     </table>
   

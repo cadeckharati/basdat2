@@ -5,12 +5,12 @@
   // Ambil data ID yang dikirim oleh index.php melalui URL
   $id_peminjaman = $_GET['id_peminjaman'];
   // Query untuk menampilkan data siswa berdasarkan ID yang dikirim
-  $sql = $pdo->prepare("SELECT * FROM tb_perpustakaan WHERE id_buku=:id_buku");
+  $sql = $pdo->prepare("SELECT * FROM tb_peminjaman WHERE id_peminjaman=:id_peminjaman");
   $sql->bindParam(':id_peminjaman', $id_peminjaman);
   $sql->execute();
   $data = $sql->fetch();
   ?>
-  <form method="post" action="index.php?page=ubah&id_peminjaman=<?php echo $id_peminjaman; ?>">
+  <form method="post" action="index.php?page=ProsesUpdatePeminjaman&id_peminjaman=<?php echo $id_peminjaman; ?>">
     <table cellpadding="8">
       <tr>
         <td>ID Member</td>

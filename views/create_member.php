@@ -1,5 +1,5 @@
 <h1>Tambah Data Barang</h1>
-<form method="post" action="index.php?page=ProsesDenda">
+<form method="post" action="index.php?page=ProsesMember">
     <table class="table table-bordered" id="dataTable" width="75%" cellspacing="0">
         <tr>
             <td>Nama</td>

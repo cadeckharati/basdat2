@@ -5,12 +5,12 @@
   // Ambil data ID yang dikirim oleh index.php melalui URL
   $id_kategori = $_GET['id_kategori'];
   // Query untuk menampilkan data siswa berdasarkan ID yang dikirim
-  $sql = $pdo->prepare("SELECT * FROM tb_kategori WHERE id_buku=:id_buku");
+  $sql = $pdo->prepare("SELECT * FROM tb_kategori WHERE id_kategori=:id_kategori");
   $sql->bindParam(':id_kategori', $id_kategori);
   $sql->execute();
   $data = $sql->fetch();
   ?>
-  <form method="post" action="index.php?page=ubah&id_kategori$id_kategori=<?php echo $id_kategori; ?>">
+  <form method="post" action="index.php?page=ProsesUpdateKategori&id_kategori=<?php echo $id_kategori; ?>">
     <table cellpadding="8">
       <tr>
         <td>Kategori</td>
