@@ -51,7 +51,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Addons
+                Daftar Tabel
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -62,7 +62,6 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
                         <a class="collapse-item" href="index.php?page=readbuku">Tabel Buku</a>
                         <a class="collapse-item" href="index.php?page=readdenda">Tabel Denda</a>
                         <a class="collapse-item" href="index.php?page=readkategori">Tabel Kategori</a>
