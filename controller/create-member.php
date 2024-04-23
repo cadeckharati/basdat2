@@ -13,7 +13,9 @@ $sql->bindParam(':no_telpon', $no_telpon);
 $execute = $sql->execute();
 if($execute){
     echo "Data berhasil ditambahkan!";
+    echo "<br><br><a href='index.php?page=readmember'>Kembali</a>";
 }else{
-    echo "Data Gagal ditambahkan. <a href='index.php'>Kembali</a>";
+    echo "Data Gagal ditambahkan!";
+    echo "<br><br><a href='index.php?page=readmember'>Kembali</a>";
 }
 ?>

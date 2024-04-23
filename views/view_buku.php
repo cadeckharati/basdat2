@@ -32,19 +32,22 @@
                         echo "<td>" . $data['nama_penulis'] . "</td>";
                         echo "<td>" . $data['tahun_terbit'] . "</td>";
                         echo "<td>" . $data['stok'] . "</td>";
-                        echo "<td><a href='index.php?page=updatebuku&id_buku=" . $data['id_buku'] . "' class='btn btn-primary btn-icon-split'>
+                        echo "<td><a href='index.php?page=updatebuku&id_buku=" . $data['id_buku'] . "' onclick='return confirm(\"Apakah Anda yakin ingin mengedit data dengan Judul ".$data['judul_buku']."?\")'' class='btn btn-primary btn-icon-split'>
                                 <span class='icon text-white-50'>
                                     <i class='fas fa-flag'></i>
                                 </span>
                                 <span class='text'>Edit</span>
                                 </a></td>";
-                        echo "<td><a href='index.php?page=ProsesHapusBuku&id_buku=" . $data['id_buku'] . "' class='btn btn-danger btn-icon-split'>
+                        echo "<td><a href='index.php?page=ProsesHapusBuku&id_buku=" . $data['id_buku'] . "' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data dengan Judul ".$data['judul_buku']."?\")'' class='btn btn-danger btn-icon-split'>
                                         <span class='icon text-white-50'>
                                             <i class='fas fa-trash'></i>
                                         </span>
                                 <span class='text'>Hapus</span>
                                 </a></td>";
                         echo "</tr>";
+                       //' onclick='return confirm(\"Apakah Anda yakin ingin mengedit data dengan Judul ".$data['judul_buku']."?\")'
+                        //' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data dengan Judul ".$data['judul_buku']."?\")'
+        
                     }
                     ?>
 

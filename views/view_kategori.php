@@ -26,13 +26,13 @@
                         echo "<tr>";
                         echo "<td>".$data['id_kategori']."</td>";
                         echo "<td>".$data['nama_kategori']."</td>";
-                        echo "<td><a href='index.php?page=updatekategori&id_kategori=".$data['id_kategori']."' class='btn btn-primary btn-icon-split'>
+                        echo "<td><a href='index.php?page=updatekategori&id_kategori=".$data['id_kategori']."' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data dengan Kategori ".$data['nama_kategori']."?\")'' class='btn btn-primary btn-icon-split'>
                                 <span class='icon text-white-50'>
                                     <i class='fas fa-flag'></i>
                                 </span>
                                 <span class='text'>Edit</span>
                                 </a></td>";
-                        echo "<td><a href='index.php?page=ProsesHapusKategori&id_kategori=".$data['id_kategori']."' class='btn btn-danger btn-icon-split'>
+                        echo "<td><a href='index.php?page=ProsesHapusKategori&id_kategori=".$data['id_kategori']."' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data dengan Kategori ".$data['nama_kategori']."?\")'' class='btn btn-danger btn-icon-split'>
                                         <span class='icon text-white-50'>
                                             <i class='fas fa-trash'></i>
                                         </span>

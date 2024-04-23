@@ -2,8 +2,8 @@
 include "model/koneksi.php";
 
 $id_peminjaman = $_GET["id_peminjaman"];
-$id_member = $_POST["id_member"];
-$id_buku = $_POST["id_buku"];
+$id_member = $_POST["nama"]; // Change from "id_member" to "nama"
+$id_buku = $_POST["judul_buku"]; // Change from "id_buku" to "judul_buku"
 $tanggal_pinjam = $_POST["tanggal_pinjam"];
 $tanggal_kembali = $_POST["tanggal_kembali"];
 
@@ -26,5 +26,4 @@ if($execute){
 }else{
     echo "Data Gagal diupdate. <a href='index.php'>Kembali</a>";
 }
-
 ?>

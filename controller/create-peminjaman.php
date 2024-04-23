@@ -15,7 +15,9 @@ $sql->bindParam(':tanggal_kembali', $tanggal_kembali);
 $execute = $sql->execute();
 if($execute){
     echo "Data berhasil ditambahkan!";
+    echo "<br><br><a href='index.php?page=readpeminjaman'>Kembali</a>";
 }else{
-    echo "Data Gagal ditambahkan. <a href='index.php'>Kembali</a>";
+    echo "Data Gagal ditambahkan!";
+    echo "<br><br><a href='index.php?page=readpeminjaman'>Kembali</a>";
 }
 ?>

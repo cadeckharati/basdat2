@@ -13,7 +13,9 @@ $sql->bindParam(':tanggal_bayar', $tanggal_bayar);
 $execute = $sql->execute();
 if($execute){
     echo "Data berhasil ditambahkan!";
+    echo "<br><br><a href='index.php?page=readdenda'>Kembali</a>";
 }else{
-    echo "Data Gagal ditambahkan. <a href='index.php'>Kembali</a>";
+    echo "Data Gagal ditambahkan!";
+    echo "<br><br><a href='index.php?page=readdenda'>Kembali</a>";
 }
 ?>

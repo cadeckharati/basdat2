@@ -9,12 +9,23 @@
   $sql->bindParam(':id_denda', $id_denda);
   $sql->execute();
   $data = $sql->fetch();
+
+  $sql_peminjaman = $pdo->query("SELECT id_peminjaman FROM tb_peminjaman");
+  $result_peminjaman = $sql_peminjaman->fetchAll(PDO::FETCH_ASSOC);
   ?>
   <form method="post" action="index.php?page=ProsesUpdateDenda&id_denda=<?php echo $id_denda; ?>">
     <table cellpadding="8">
       <tr>
         <td>Kode Pinjam</td>
-        <td><input type="text" name="id_peminjaman" value="<?php echo $data['id_peminjaman']; ?>"></td>
+        <td><select name="id_peminjaman" id="id_peminjaman" required>
+          <?php
+          foreach ($result_peminjaman as $peminjaman) {
+            echo "<option value='".$peminjaman["id_peminjaman"]."'";
+            if ($data["id_peminjaman"] == $peminjaman["id_peminjaman"]) echo "selected";
+            echo ">".$peminjaman["id_peminjaman"]."</option>";
+          }
+          ?>
+        </select></td>
       </tr>
       <tr>
         <td>Total Denda</td>

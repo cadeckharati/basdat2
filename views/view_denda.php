@@ -30,13 +30,13 @@
                         echo "<td>".$data['id_peminjaman']."</td>";
                         echo "<td>".$data['total_denda']."</td>";
                         echo "<td>".$data['tanggal_bayar']."</td>";
-                        echo "<td><a href='index.php?page=updatedenda&id_denda=".$data['id_denda']."' class='btn btn-primary btn-icon-split'>
+                        echo "<td><a href='index.php?page=updatedenda&id_denda=".$data['id_denda']."onclick='return confirm(\"Apakah Anda yakin ingin mengedit data dengan ID ".$data['id_denda']."?\")'' class='btn btn-primary btn-icon-split'>
                                 <span class='icon text-white-50'>
                                     <i class='fas fa-flag'></i>
                                 </span>
                                 <span class='text'>Edit</span>
                                 </a></td>";
-                        echo "<td><a href='index.php?page=ProsesHapusDenda&id_denda=".$data['id_denda']."' class='btn btn-danger btn-icon-split'>
+                        echo "<td><a href='index.php?page=ProsesHapusDenda&id_denda=".$data['id_denda']."' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data dengan ID ".$data['id_denda']."?\")'' class='btn btn-danger btn-icon-split'>
                                         <span class='icon text-white-50'>
                                             <i class='fas fa-trash'></i>
                                         </span>

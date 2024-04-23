@@ -8,7 +8,8 @@ $sql->bindParam(':id_denda', $id_denda);
 $execute = $sql->execute();
 if($execute){
     echo "Data berhasil dihapus!";
+    echo "<br><br><a href='index.php?page=readdenda'>Kembali</a>";
 }else{
-    echo "Data Gagal di Hapus. <a href='index.php'>Kembali</a>";
+    echo "Data Gagal di Hapus. <a href='index.php?page=readdenda'>Kembali</a>";
 }
 ?>

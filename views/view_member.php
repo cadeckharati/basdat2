@@ -30,13 +30,13 @@
                             echo "<td>".$data['nama']."</td>";
                             echo "<td>".$data['alamat']."</td>";
                             echo "<td>".$data['no_telpon']."</td>";
-                            echo "<td><a href='index.php?page=updatemember&id_member=".$data['id_member']."' class='btn btn-primary btn-icon-split'>
+                            echo "<td><a href='index.php?page=updatemember&id_member=".$data['id_member']."' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data dengan Nama Member ".$data['nama']."?\")'' class='btn btn-primary btn-icon-split'>
                                     <span class='icon text-white-50'>
                                         <i class='fas fa-flag'></i>
                                     </span>
                                     <span class='text'>Edit</span>
                                     </a></td>";
-                            echo "<td><a href='index.php?page=ProsesHapusMember&id_member=".$data['id_member']."' class='btn btn-danger btn-icon-split'>
+                            echo "<td><a href='index.php?page=ProsesHapusMember&id_member=".$data['id_member']."' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data dengan Nama Member ".$data['nama']."?\")'' class='btn btn-danger btn-icon-split'>
                                             <span class='icon text-white-50'>
                                                 <i class='fas fa-trash'></i>
                                             </span>
