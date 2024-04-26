@@ -183,10 +183,92 @@
 </ul>
 
 </nav>
-<title>SELAMAT DATANG PERPUSTAKAAN</title>
+<title> <h1> DATANG PERPUSTAKAAN</h1></title>
 <div class="m-0 font-weight-bold text-primary">Anggota Kelompok</div>
-<div class="m-0 font-weight-bold text-primary">Yedija Tarigan (223020503056) </div>
-<div class="m-0 font-weight-bold text-primary">Cadeck Cristian Harati (223020503050) </div>
-<div class="m-0 font-weight-bold text-primary">Wafik Andini () </div>
-<div class="m-0 font-weight-bold text-primary">Siska () </div>
-<div class="m-0 font-weight-bold text-primary">Reina () </div>
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+<!-- Content Row -->
+<div class="row">
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            223020503056</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">Yedija Tarigan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                        223020503050</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">Cadeck Cristian Harati</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">223010503037
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Wafik Andini</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pending Requests Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                           223010503033 </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">Siska Puspitarani</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+<div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            223010503014</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">Reina Dewi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
